@@ -9,7 +9,7 @@ export function useMovies(query, callback) {
 
   useEffect(
     function () {
-      // callback?.();
+      callback?.();
       async function fetchMovies() {
         try {
           setIsLoading(true);
