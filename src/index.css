@@ -10,6 +10,35 @@
   --color-red-dark: #e03131;
 }
 
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 4px; /* Adjust width as desired */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #999; /* Darker color for thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Hide the scrollbar arrows (Webkit only) */
+::-webkit-scrollbar-button {
+  display: none;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(
+    --color-background-500
+  ); /* Replace with your actual background color */
+}
+
 * {
   margin: 0;
   padding: 0;
